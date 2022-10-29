@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BSI CODING CENTER</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body background="img/background.jpg">
@@ -26,7 +27,7 @@
     <div class="wrapper">
         <!-- untuk home -->
         <section id="home">
-            <img src="img/web-back.png"/>
+            <img src="img/web-back.png" style="width: 110% ;"/>
             <div class="kolom">
                 <p class="deskripsi">Belajar Programming #DirumahAja</p>
                 <h2>Belajar Dengan Kelas Standar Industri Global</h2>
@@ -138,8 +139,10 @@
                     <b>LinkedIn: </b>BSICC Education</p>
                 </div>
                 <div class="footer-section">
-                    <h3>Keep Coding,<br>Solve Problems.</h3>
-
+                    <h3>Share</h3>
+                    <a href="https://www.facebook.com/share.php?u=https://www.tegarjoko.github.io/" class="fa fa-facebook" target="_blank"></a>
+                    <a href="https://www.twitter.com/intent/tweet?text=Great%20Web%20For%20Learning%20Programming%20&url=https://www.tegarjoko.github.io/" class="fa fa-twitter" target="_blank"></a>
+                    <a href="https://www.linkedin.com/shareArticle?&url=https://www.tegarjoko.github.io" class="fa fa-linkedin" target="_blank"></a>
                 </div>
             </div>
         </div>
@@ -151,15 +154,13 @@
         </div>
     </div>
     <script>
-        var prevScrollpos = window.pageYOffset;
-        window.onscroll = function() {
-        var currentScrollPos = window.pageYOffset;
-          if (prevScrollpos > currentScrollPos) {
-            document.getElementById("navigator").style.top = "0";
-          } else {
-            document.getElementById("navigator").style.top = "-80px";
-          }
-          prevScrollpos = currentScrollPos;
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                document.getElementById("navigator").style.lineHeight = "55px";
+            } else {
+                document.getElementById("navigator").style.lineHeight = "80px";
+            }
         }
         </script>
 </body>
