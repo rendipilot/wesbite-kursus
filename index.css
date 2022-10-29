@@ -1,3 +1,7 @@
+:root{
+    --font-color : #3E6D9C;
+}
+
 html {scroll-behavior: smooth;}
 * {
     text-decoration: none;
@@ -82,7 +86,7 @@ section {
 
 .kolom {
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 @keyframes animate-background {
@@ -104,7 +108,7 @@ h2 {
     font-weight: 800;
     font-size: 45px;
     margin-bottom: 20px;
-    color: #364f6b;
+    color: var(--font-color);
     width: 100%;
     line-height: 50px;
 }
@@ -170,6 +174,7 @@ p {
     position: relative;
     display: flex;
     flex-wrap: wrap;
+    margin: 0px 0px 120px 0px;
 }
 
 .kartu-tutor {
@@ -192,14 +197,16 @@ p {
     font-weight: 800;
     font-size: 25px;
     text-align: center;
-    color: #364f6b;
+    color: var(--font-color);
 }
+
 
 .partner-list {
     width: 100%;
     position: relative;
     display: flex;
     flex-wrap: wrap;
+    margin: 0px 0px 120px 0px;
 }
 
 .kartu-partner {
@@ -212,7 +219,7 @@ p {
 }
 
 .kartu-partner img {
-    width: 150px;
+    width: 100px;
     border-radius: 50%;
     transition: transform .2s
 }
@@ -240,7 +247,7 @@ h3 {
     font-weight: 800;
     font-size: 30px;
     margin-bottom: 0px;
-    color: #364f6b;
+    color: var(--font-color);
     width: 100%;
     line-height: 40px;
 }
