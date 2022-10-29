@@ -123,6 +123,7 @@ a.buttonss {
   -webkit-transition: ease-out 0.4s;
   -moz-transition: ease-out 0.4s;
   transition: ease-out 0.4s;
+  margin: 0px auto 0px;
 }
 
 a.buttonss:hover{
@@ -130,14 +131,27 @@ a.buttonss:hover{
     border: 2px solid #364f6b;
     box-shadow: inset 400px 0 0 0 #D80286;
 }
+@keyframes arrowdown{
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(50%);
+    }
 
+}
 .arrow{
     display: inline-block;
-    transition: ease-out 0.4s;
+    transition: ease-in 0.4s;
 }
 
-a.buttonss:hover .arrow{
-    transform: translateX(70%);
+a.buttonss:hover .down{
+    display: inline-block;
+    animation: 1s ease arrowdown infinite;
+}
+a.buttonss:hover .right{
+    display: inline-block;
+    transform: translateX(50%);
 }
 
 a.tbl-biru {
