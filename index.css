@@ -1,3 +1,10 @@
+:root{
+    --font-color : #3E6D9C;
+    --white-color : #fff;
+    --black-color : #000;
+    --main-color : #D80286;
+}
+
 html {scroll-behavior: smooth;}
 * {
     text-decoration: none;
@@ -14,7 +21,7 @@ body {
 .red_line {
     display: block;
     margin: 1rem auto 1rem;
-    background: #D80286;
+    background: var(--main-color);
     height: 2px;
     width: 8.6rem;
 
@@ -31,7 +38,7 @@ body {
     font-weight: 800;
     float: left;
     font-family: courier;
-    color: #ffffff;
+    color: var(--white-color);
 }
 
 .menu {
@@ -44,7 +51,7 @@ nav {
     display: flex;
     line-height: 80px;
     top: 0;
-    background: #D80286;
+    background: var(--main-color);
     z-index: 1;
     border-bottom:3px solid #364f6b;
     transition: top 0.5s;
@@ -82,7 +89,7 @@ section {
 
 .kolom {
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 @keyframes animate-background {
@@ -94,7 +101,7 @@ section {
     font-size: 20px;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
-    color: #ffffff;
+    color: var(--white-color);
     padding: 5px;
     animation: 2s ease-in animate-background both;
 }
@@ -104,13 +111,13 @@ h2 {
     font-weight: 800;
     font-size: 45px;
     margin-bottom: 20px;
-    color: #364f6b;
+    color: var(--font-color);
     width: 100%;
     line-height: 50px;
 }
 
 a.buttonss {
-    color: #000000;
+    color: var(--black-color);
   border: 2px solid rgb(216, 2, 134);
   border-radius: 0px;
   padding: 18px 36px;
@@ -127,9 +134,9 @@ a.buttonss {
 }
 
 a.buttonss:hover{
-    color: #ffffff;
+    color: var(--white-color);
     border: 2px solid #364f6b;
-    box-shadow: inset 400px 0 0 0 #D80286;
+    box-shadow: inset 400px 0 0 0 var(--main-color);
 }
 @keyframes arrowdown{
     0% {
@@ -159,7 +166,7 @@ a.tbl-biru {
     border-radius: 20px;
     margin-top: 20px;
     padding: 15px 20px 15px 20px;
-    color: #FFFFFF;
+    color: var(--white-color);
     cursor: pointer;
     font-weight: bold;
 }
@@ -184,6 +191,7 @@ p {
     position: relative;
     display: flex;
     flex-wrap: wrap;
+    margin: 0px 0px 120px 0px;
 }
 
 .kartu-tutor {
@@ -206,14 +214,16 @@ p {
     font-weight: 800;
     font-size: 25px;
     text-align: center;
-    color: #364f6b;
+    color: var(--font-color);
 }
+
 
 .partner-list {
     width: 100%;
     position: relative;
     display: flex;
     flex-wrap: wrap;
+    margin: 0px 0px 120px 0px;
 }
 
 .kartu-partner {
@@ -226,7 +236,7 @@ p {
 }
 
 .kartu-partner img {
-    width: 150px;
+    width: 100px;
     border-radius: 50%;
     transition: transform .2s
 }
@@ -254,7 +264,7 @@ h3 {
     font-weight: 800;
     font-size: 30px;
     margin-bottom: 0px;
-    color: #364f6b;
+    color: var(--font-color);
     width: 100%;
     line-height: 40px;
 }
